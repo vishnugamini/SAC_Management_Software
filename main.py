@@ -1,1 +1,0 @@
-print("VIT-AP is the best uni")
