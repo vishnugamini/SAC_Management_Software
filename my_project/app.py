@@ -8,15 +8,15 @@ def home():
 
 @app.route('/scanning')
 def scanning():
-    return 'This is the Scanning Page'
+    return render_template("scanning.html")
 
 @app.route('/court_booking')
 def court_booking():
-    return 'You are on the Court Booking Page'
+    return render_template("court_booking.html")
 
 @app.route('/equipment_borrowing')
 def equipment_borrowing():
-    return 'Explore the Equipment Borrowing Page'
+    return render_template("equipment_borrowing.html")
 
 if __name__ == '__main__':
     app.run(debug=True)
