@@ -1,10 +1,10 @@
-from flask import Flask
+from flask import Flask,render_template
 
-app = Flask(__name__)
+app = Flask(__name__,template_folder='pages')
 
 @app.route('/')
 def home():
-    return 'Welcome to the Home Page'
+    return render_template("home.html")
 
 @app.route('/scanning')
 def scanning():
