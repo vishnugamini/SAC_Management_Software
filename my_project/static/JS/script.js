@@ -11,6 +11,10 @@ function showHiddenElement() {
         alert("Please enter a registration number.");
     } else {
         var hiddenElement = document.getElementById("hidden-elements");
+        hiddenElement.classList.add("visible");
         hiddenElement.style.display = "block";
     }
+}
+function clickingSubmit() {
+    showHiddenElement();
 }
