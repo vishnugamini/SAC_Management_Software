@@ -5,26 +5,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home Page</title>
-
+        <link rel="stylesheet" href="{{ url_for('static', filename='./CSS/home.css') }}">
     </head>
 
     <body>
-        <h1>Welcome to SAC</h1>
-        <p>This is SAC Registration Service</p>
+        <div class="container">
+            <h1>Welcome to SAC</h1>
+            <p>This is SAC Registration Service</p>
+            <input type="text" placeholder="Enter Registration number" name="regNum" id="reg-num-input" required>
+            <button id="submit" type="submit" value="Submit" onclick="clickingSubmit()">Submit</button>
 
-        <input type="text" placeholder="Enter Registration number" name="regNum" id="reg-num-input" required>
-        <input id="submit" type="submit" value="Submit" onclick="showHiddenElement()">
+            <br>
 
-
-        <br>
-
-        <div id="hidden-elements">
-            <button type="button" id="court" onclick="redirectTo('http://127.0.0.1:5000/court_booking')">Court</button>
-            <button type="button" id="equipment"
-                onclick="redirectTo('http://127.0.0.1:5000/equipment_borrowing')">Equipment</button>
+            <div id="hidden-elements">
+                <button type="button" id="court"
+                    onclick="redirectTo('http://127.0.0.1:5000/court_booking')">Court</button>
+                <button type="button" id="equipment"
+                    onclick="redirectTo('http://127.0.0.1:5000/equipment_borrowing')">Equipment</button>
+            </div>
         </div>
     </body>
-    <link rel="stylesheet" href="{{ url_for('static', filename='./CSS/home.css') }}">
     <script src="{{ url_for('static', filename='./JS/script.js') }}"></script>
 
 </html>
