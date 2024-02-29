@@ -1,6 +1,8 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #e8caca;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(45deg, blue, pink);
+    background-repeat: no-repeat;
+    height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -12,9 +14,50 @@ body {
 }
 
 h1 {
-    color: #ba1212;
+    font-size: 3rem;
+    color: #f4f4f4;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
 }
 
 p {
-    color: #be0505;
+    font-size: 2rem;
+    color: #f4f4f4;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    font-weight: bolder;
+}
+
+.allCourts {
+    display: grid;
+    grid-template-columns: auto auto max-content;
+
+}
+
+.court {
+    padding: 3rem;
+    background-color: rgb(110, 90, 109);
+    box-shadow: 0 0 0 3px black;
+    border: #ccc 2px solid;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    height: 10em;
+    width: 22em;
+    margin: 10px;
+    border-radius: 5px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: grid;
+    
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+.court:hover {
+    background-color: rgb(253, 203, 250);
+    transform: scale(110%);
 }

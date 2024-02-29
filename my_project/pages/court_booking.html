@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='court_booking.css') }}">
-</head>
-<body>
-    <div class="container">
-        <h1>Welcome to the Court Booking Page</h1>
-        <p>This is SAC REGESTRATION SYSTEM</p>
-    </div>
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='./CSS/court_booking.css') }}">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Welcome to the Court Booking Page</h1>
+            <p>This is SAC Registration System</p>
+        </div>
+
+        <div class="allCourts">
+            <div class="court">court 1</div>
+            <div class="court">court 2</div>
+            <div class="court">court 3</div>
+            <div class="court">court 4</div>
+            <div class="court">court 5</div>
+            <div class="court">court 6</div>
+        </div>
+    </body>
+
 </html>

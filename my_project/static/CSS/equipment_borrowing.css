@@ -1,8 +1,12 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #e8caca;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(45deg, blue, pink);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
 }
 
 .container {
@@ -11,10 +15,19 @@ body {
     text-align: center;
 }
 
+
 h1 {
-    color: #ba1212;
+    font-size: 3rem;
+    color: #f4f4f4;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
 }
 
 p {
-    color: #be0505;
+    font-size: 2rem;
+    color: #f4f4f4;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    font-weight: bolder;
 }
